@@ -1,8 +1,9 @@
 <?xml version='1.0' encoding='utf-8' ?>
 
 <!-- build 20211.21.0320.1853                               -->
-<workbook original-version='18.1' source-build='2021.1.0 (20211.21.0320.1853)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+<workbook original-version='18.1' source-build='2021.1.0 (20211.21.0320.1853)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
   <document-format-change-manifest>
+    <MapboxVectorStylesAndLayers />
     <_.fcp.MarkAnimation.true...MarkAnimation />
     <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
     <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
@@ -19,10 +20,10 @@
       <connection class='federated'>
         <named-connections>
           <named-connection caption='2020_AU_Region_Mobility_Report' name='textscan.1ktypsw1049dsg19ug2uw0a8gzpp'>
-            <connection class='textscan' directory='C:/Users/bill/Documents/GitHub/Datathon/Datathon book1.twb Files/Users/bennywu2019/Downloads/Region_Mobility_Report_CSVs' filename='2020_AU_Region_Mobility_Report.csv' password='' server='' />
+            <connection class='textscan' directory='/Users/bennywu2019/Downloads/Region_Mobility_Report_CSVs' filename='2020_CA_Region_Mobility_Report.csv' password='' server='' />
           </named-connection>
         </named-connections>
-        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1ktypsw1049dsg19ug2uw0a8gzpp' name='2020_AU_Region_Mobility_Report.csv' table='[2020_AU_Region_Mobility_Report#csv]' type='table'>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1ktypsw1049dsg19ug2uw0a8gzpp' name='2020_CA_Region_Mobility_Report.csv' table='[2020_CA_Region_Mobility_Report#csv]' type='table'>
           <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
             <column datatype='string' name='country_region_code' ordinal='0' />
             <column datatype='string' name='country_region' ordinal='1' />
@@ -41,30 +42,99 @@
             <column datatype='integer' name='residential_percent_change_from_baseline' ordinal='14' />
           </columns>
         </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
-        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1ktypsw1049dsg19ug2uw0a8gzpp' name='2020_AU_Region_Mobility_Report.csv' table='[2020_AU_Region_Mobility_Report#csv]' type='table'>
-          <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
-            <column datatype='string' name='country_region_code' ordinal='0' />
-            <column datatype='string' name='country_region' ordinal='1' />
-            <column datatype='string' name='sub_region_1' ordinal='2' />
-            <column datatype='string' name='sub_region_2' ordinal='3' />
-            <column datatype='string' name='metro_area' ordinal='4' />
-            <column datatype='string' name='iso_3166_2_code' ordinal='5' />
-            <column datatype='string' name='census_fips_code' ordinal='6' />
-            <column datatype='string' name='place_id' ordinal='7' />
-            <column datatype='date' name='date' ordinal='8' />
-            <column datatype='integer' name='retail_and_recreation_percent_change_from_baseline' ordinal='9' />
-            <column datatype='integer' name='grocery_and_pharmacy_percent_change_from_baseline' ordinal='10' />
-            <column datatype='integer' name='parks_percent_change_from_baseline' ordinal='11' />
-            <column datatype='integer' name='transit_stations_percent_change_from_baseline' ordinal='12' />
-            <column datatype='integer' name='workplaces_percent_change_from_baseline' ordinal='13' />
-            <column datatype='integer' name='residential_percent_change_from_baseline' ordinal='14' />
-          </columns>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='textscan.1ktypsw1049dsg19ug2uw0a8gzpp' name='2020_CA_Region_Mobility_Report.csv' table='[2020_CA_Region_Mobility_Report#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+              <column datatype='string' name='country_region_code' ordinal='0' />
+              <column datatype='string' name='country_region' ordinal='1' />
+              <column datatype='string' name='sub_region_1' ordinal='2' />
+              <column datatype='string' name='sub_region_2' ordinal='3' />
+              <column datatype='string' name='metro_area' ordinal='4' />
+              <column datatype='string' name='iso_3166_2_code' ordinal='5' />
+              <column datatype='string' name='census_fips_code' ordinal='6' />
+              <column datatype='string' name='place_id' ordinal='7' />
+              <column datatype='date' name='date' ordinal='8' />
+              <column datatype='integer' name='retail_and_recreation_percent_change_from_baseline' ordinal='9' />
+              <column datatype='integer' name='grocery_and_pharmacy_percent_change_from_baseline' ordinal='10' />
+              <column datatype='integer' name='parks_percent_change_from_baseline' ordinal='11' />
+              <column datatype='integer' name='transit_stations_percent_change_from_baseline' ordinal='12' />
+              <column datatype='integer' name='workplaces_percent_change_from_baseline' ordinal='13' />
+              <column datatype='integer' name='residential_percent_change_from_baseline' ordinal='14' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1ktypsw1049dsg19ug2uw0a8gzpp' name='2020_CH_Region_Mobility_Report.csv' table='[2020_CH_Region_Mobility_Report#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+              <column datatype='string' name='country_region_code' ordinal='0' />
+              <column datatype='string' name='country_region' ordinal='1' />
+              <column datatype='string' name='sub_region_1' ordinal='2' />
+              <column datatype='string' name='sub_region_2' ordinal='3' />
+              <column datatype='string' name='metro_area' ordinal='4' />
+              <column datatype='string' name='iso_3166_2_code' ordinal='5' />
+              <column datatype='string' name='census_fips_code' ordinal='6' />
+              <column datatype='string' name='place_id' ordinal='7' />
+              <column datatype='date' name='date' ordinal='8' />
+              <column datatype='integer' name='retail_and_recreation_percent_change_from_baseline' ordinal='9' />
+              <column datatype='integer' name='grocery_and_pharmacy_percent_change_from_baseline' ordinal='10' />
+              <column datatype='integer' name='parks_percent_change_from_baseline' ordinal='11' />
+              <column datatype='integer' name='transit_stations_percent_change_from_baseline' ordinal='12' />
+              <column datatype='integer' name='workplaces_percent_change_from_baseline' ordinal='13' />
+              <column datatype='integer' name='residential_percent_change_from_baseline' ordinal='14' />
+            </columns>
+          </relation>
         </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[census_fips_code (2020_CH_Region_Mobility_Report.csv)]' value='[2020_CH_Region_Mobility_Report.csv].[census_fips_code]' />
+          <map key='[census_fips_code]' value='[2020_CA_Region_Mobility_Report.csv].[census_fips_code]' />
+          <map key='[country_region (2020_CH_Region_Mobility_Report.csv)]' value='[2020_CH_Region_Mobility_Report.csv].[country_region]' />
+          <map key='[country_region]' value='[2020_CA_Region_Mobility_Report.csv].[country_region]' />
+          <map key='[country_region_code (2020_CH_Region_Mobility_Report.csv)]' value='[2020_CH_Region_Mobility_Report.csv].[country_region_code]' />
+          <map key='[country_region_code]' value='[2020_CA_Region_Mobility_Report.csv].[country_region_code]' />
+          <map key='[date (2020_CH_Region_Mobility_Report.csv)]' value='[2020_CH_Region_Mobility_Report.csv].[date]' />
+          <map key='[date]' value='[2020_CA_Region_Mobility_Report.csv].[date]' />
+          <map key='[grocery_and_pharmacy_percent_change_from_baseline (2020_CH_Region_Mobility_Report.csv)]' value='[2020_CH_Region_Mobility_Report.csv].[grocery_and_pharmacy_percent_change_from_baseline]' />
+          <map key='[grocery_and_pharmacy_percent_change_from_baseline]' value='[2020_CA_Region_Mobility_Report.csv].[grocery_and_pharmacy_percent_change_from_baseline]' />
+          <map key='[iso_3166_2_code (2020_CH_Region_Mobility_Report.csv)]' value='[2020_CH_Region_Mobility_Report.csv].[iso_3166_2_code]' />
+          <map key='[iso_3166_2_code]' value='[2020_CA_Region_Mobility_Report.csv].[iso_3166_2_code]' />
+          <map key='[metro_area (2020_CH_Region_Mobility_Report.csv)]' value='[2020_CH_Region_Mobility_Report.csv].[metro_area]' />
+          <map key='[metro_area]' value='[2020_CA_Region_Mobility_Report.csv].[metro_area]' />
+          <map key='[parks_percent_change_from_baseline (2020_CH_Region_Mobility_Report.csv)]' value='[2020_CH_Region_Mobility_Report.csv].[parks_percent_change_from_baseline]' />
+          <map key='[parks_percent_change_from_baseline]' value='[2020_CA_Region_Mobility_Report.csv].[parks_percent_change_from_baseline]' />
+          <map key='[place_id (2020_CH_Region_Mobility_Report.csv)]' value='[2020_CH_Region_Mobility_Report.csv].[place_id]' />
+          <map key='[place_id]' value='[2020_CA_Region_Mobility_Report.csv].[place_id]' />
+          <map key='[residential_percent_change_from_baseline (2020_CH_Region_Mobility_Report.csv)]' value='[2020_CH_Region_Mobility_Report.csv].[residential_percent_change_from_baseline]' />
+          <map key='[residential_percent_change_from_baseline]' value='[2020_CA_Region_Mobility_Report.csv].[residential_percent_change_from_baseline]' />
+          <map key='[retail_and_recreation_percent_change_from_baseline (2020_CH_Region_Mobility_Report.csv)]' value='[2020_CH_Region_Mobility_Report.csv].[retail_and_recreation_percent_change_from_baseline]' />
+          <map key='[retail_and_recreation_percent_change_from_baseline]' value='[2020_CA_Region_Mobility_Report.csv].[retail_and_recreation_percent_change_from_baseline]' />
+          <map key='[sub_region_1 (2020_CH_Region_Mobility_Report.csv)]' value='[2020_CH_Region_Mobility_Report.csv].[sub_region_1]' />
+          <map key='[sub_region_1]' value='[2020_CA_Region_Mobility_Report.csv].[sub_region_1]' />
+          <map key='[sub_region_2 (2020_CH_Region_Mobility_Report.csv)]' value='[2020_CH_Region_Mobility_Report.csv].[sub_region_2]' />
+          <map key='[sub_region_2]' value='[2020_CA_Region_Mobility_Report.csv].[sub_region_2]' />
+          <map key='[transit_stations_percent_change_from_baseline (2020_CH_Region_Mobility_Report.csv)]' value='[2020_CH_Region_Mobility_Report.csv].[transit_stations_percent_change_from_baseline]' />
+          <map key='[transit_stations_percent_change_from_baseline]' value='[2020_CA_Region_Mobility_Report.csv].[transit_stations_percent_change_from_baseline]' />
+          <map key='[workplaces_percent_change_from_baseline (2020_CH_Region_Mobility_Report.csv)]' value='[2020_CH_Region_Mobility_Report.csv].[workplaces_percent_change_from_baseline]' />
+          <map key='[workplaces_percent_change_from_baseline]' value='[2020_CA_Region_Mobility_Report.csv].[workplaces_percent_change_from_baseline]' />
+        </cols>
         <metadata-records>
           <metadata-record class='capability'>
             <remote-name />
             <remote-type>0</remote-type>
-            <parent-name>[2020_AU_Region_Mobility_Report.csv]</parent-name>
+            <parent-name>[2020_CA_Region_Mobility_Report.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_CA&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[2020_CH_Region_Mobility_Report.csv]</parent-name>
             <remote-alias />
             <aggregation>Count</aggregation>
             <contains-null>true</contains-null>
@@ -81,7 +151,7 @@
             <remote-name>country_region_code</remote-name>
             <remote-type>129</remote-type>
             <local-name>[country_region_code]</local-name>
-            <parent-name>[2020_AU_Region_Mobility_Report.csv]</parent-name>
+            <parent-name>[2020_CA_Region_Mobility_Report.csv]</parent-name>
             <remote-alias>country_region_code</remote-alias>
             <ordinal>0</ordinal>
             <local-type>string</local-type>
@@ -90,13 +160,13 @@
             <width>1073741823</width>
             <contains-null>true</contains-null>
             <collation flag='0' name='LEN_RGB' />
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_AU_Region_Mobility_Report.csv_74B5B60FCCFE40708FB1E6F04235DEA0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_CA_Region_Mobility_Report.csv_E64C50DAB02A425980934943F87B7DBF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>country_region</remote-name>
             <remote-type>129</remote-type>
             <local-name>[country_region]</local-name>
-            <parent-name>[2020_AU_Region_Mobility_Report.csv]</parent-name>
+            <parent-name>[2020_CA_Region_Mobility_Report.csv]</parent-name>
             <remote-alias>country_region</remote-alias>
             <ordinal>1</ordinal>
             <local-type>string</local-type>
@@ -105,13 +175,13 @@
             <width>1073741823</width>
             <contains-null>true</contains-null>
             <collation flag='0' name='LEN_RGB' />
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_AU_Region_Mobility_Report.csv_74B5B60FCCFE40708FB1E6F04235DEA0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_CA_Region_Mobility_Report.csv_E64C50DAB02A425980934943F87B7DBF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>sub_region_1</remote-name>
             <remote-type>129</remote-type>
             <local-name>[sub_region_1]</local-name>
-            <parent-name>[2020_AU_Region_Mobility_Report.csv]</parent-name>
+            <parent-name>[2020_CA_Region_Mobility_Report.csv]</parent-name>
             <remote-alias>sub_region_1</remote-alias>
             <ordinal>2</ordinal>
             <local-type>string</local-type>
@@ -120,13 +190,13 @@
             <width>1073741823</width>
             <contains-null>true</contains-null>
             <collation flag='0' name='LEN_RGB' />
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_AU_Region_Mobility_Report.csv_74B5B60FCCFE40708FB1E6F04235DEA0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_CA_Region_Mobility_Report.csv_E64C50DAB02A425980934943F87B7DBF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>sub_region_2</remote-name>
             <remote-type>129</remote-type>
             <local-name>[sub_region_2]</local-name>
-            <parent-name>[2020_AU_Region_Mobility_Report.csv]</parent-name>
+            <parent-name>[2020_CA_Region_Mobility_Report.csv]</parent-name>
             <remote-alias>sub_region_2</remote-alias>
             <ordinal>3</ordinal>
             <local-type>string</local-type>
@@ -135,13 +205,13 @@
             <width>1073741823</width>
             <contains-null>true</contains-null>
             <collation flag='0' name='LEN_RGB' />
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_AU_Region_Mobility_Report.csv_74B5B60FCCFE40708FB1E6F04235DEA0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_CA_Region_Mobility_Report.csv_E64C50DAB02A425980934943F87B7DBF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>metro_area</remote-name>
             <remote-type>129</remote-type>
             <local-name>[metro_area]</local-name>
-            <parent-name>[2020_AU_Region_Mobility_Report.csv]</parent-name>
+            <parent-name>[2020_CA_Region_Mobility_Report.csv]</parent-name>
             <remote-alias>metro_area</remote-alias>
             <ordinal>4</ordinal>
             <local-type>string</local-type>
@@ -151,13 +221,13 @@
             <width>1073741823</width>
             <contains-null>true</contains-null>
             <collation flag='0' name='LEN_RGB' />
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_AU_Region_Mobility_Report.csv_74B5B60FCCFE40708FB1E6F04235DEA0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_CA_Region_Mobility_Report.csv_E64C50DAB02A425980934943F87B7DBF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>iso_3166_2_code</remote-name>
             <remote-type>129</remote-type>
             <local-name>[iso_3166_2_code]</local-name>
-            <parent-name>[2020_AU_Region_Mobility_Report.csv]</parent-name>
+            <parent-name>[2020_CA_Region_Mobility_Report.csv]</parent-name>
             <remote-alias>iso_3166_2_code</remote-alias>
             <ordinal>5</ordinal>
             <local-type>string</local-type>
@@ -166,13 +236,13 @@
             <width>1073741823</width>
             <contains-null>true</contains-null>
             <collation flag='0' name='LEN_RGB' />
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_AU_Region_Mobility_Report.csv_74B5B60FCCFE40708FB1E6F04235DEA0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_CA_Region_Mobility_Report.csv_E64C50DAB02A425980934943F87B7DBF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>census_fips_code</remote-name>
             <remote-type>129</remote-type>
             <local-name>[census_fips_code]</local-name>
-            <parent-name>[2020_AU_Region_Mobility_Report.csv]</parent-name>
+            <parent-name>[2020_CA_Region_Mobility_Report.csv]</parent-name>
             <remote-alias>census_fips_code</remote-alias>
             <ordinal>6</ordinal>
             <local-type>string</local-type>
@@ -182,13 +252,13 @@
             <width>1073741823</width>
             <contains-null>true</contains-null>
             <collation flag='0' name='LEN_RGB' />
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_AU_Region_Mobility_Report.csv_74B5B60FCCFE40708FB1E6F04235DEA0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_CA_Region_Mobility_Report.csv_E64C50DAB02A425980934943F87B7DBF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>place_id</remote-name>
             <remote-type>129</remote-type>
             <local-name>[place_id]</local-name>
-            <parent-name>[2020_AU_Region_Mobility_Report.csv]</parent-name>
+            <parent-name>[2020_CA_Region_Mobility_Report.csv]</parent-name>
             <remote-alias>place_id</remote-alias>
             <ordinal>7</ordinal>
             <local-type>string</local-type>
@@ -197,110 +267,333 @@
             <width>1073741823</width>
             <contains-null>true</contains-null>
             <collation flag='0' name='LEN_RGB' />
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_AU_Region_Mobility_Report.csv_74B5B60FCCFE40708FB1E6F04235DEA0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_CA_Region_Mobility_Report.csv_E64C50DAB02A425980934943F87B7DBF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>date</remote-name>
             <remote-type>133</remote-type>
             <local-name>[date]</local-name>
-            <parent-name>[2020_AU_Region_Mobility_Report.csv]</parent-name>
+            <parent-name>[2020_CA_Region_Mobility_Report.csv]</parent-name>
             <remote-alias>date</remote-alias>
             <ordinal>8</ordinal>
             <local-type>date</local-type>
             <aggregation>Year</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_AU_Region_Mobility_Report.csv_74B5B60FCCFE40708FB1E6F04235DEA0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_CA_Region_Mobility_Report.csv_E64C50DAB02A425980934943F87B7DBF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>retail_and_recreation_percent_change_from_baseline</remote-name>
             <remote-type>20</remote-type>
             <local-name>[retail_and_recreation_percent_change_from_baseline]</local-name>
-            <parent-name>[2020_AU_Region_Mobility_Report.csv]</parent-name>
+            <parent-name>[2020_CA_Region_Mobility_Report.csv]</parent-name>
             <remote-alias>retail_and_recreation_percent_change_from_baseline</remote-alias>
             <ordinal>9</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_AU_Region_Mobility_Report.csv_74B5B60FCCFE40708FB1E6F04235DEA0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_CA_Region_Mobility_Report.csv_E64C50DAB02A425980934943F87B7DBF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>grocery_and_pharmacy_percent_change_from_baseline</remote-name>
             <remote-type>20</remote-type>
             <local-name>[grocery_and_pharmacy_percent_change_from_baseline]</local-name>
-            <parent-name>[2020_AU_Region_Mobility_Report.csv]</parent-name>
+            <parent-name>[2020_CA_Region_Mobility_Report.csv]</parent-name>
             <remote-alias>grocery_and_pharmacy_percent_change_from_baseline</remote-alias>
             <ordinal>10</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_AU_Region_Mobility_Report.csv_74B5B60FCCFE40708FB1E6F04235DEA0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_CA_Region_Mobility_Report.csv_E64C50DAB02A425980934943F87B7DBF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>parks_percent_change_from_baseline</remote-name>
             <remote-type>20</remote-type>
             <local-name>[parks_percent_change_from_baseline]</local-name>
-            <parent-name>[2020_AU_Region_Mobility_Report.csv]</parent-name>
+            <parent-name>[2020_CA_Region_Mobility_Report.csv]</parent-name>
             <remote-alias>parks_percent_change_from_baseline</remote-alias>
             <ordinal>11</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_AU_Region_Mobility_Report.csv_74B5B60FCCFE40708FB1E6F04235DEA0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_CA_Region_Mobility_Report.csv_E64C50DAB02A425980934943F87B7DBF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>transit_stations_percent_change_from_baseline</remote-name>
             <remote-type>20</remote-type>
             <local-name>[transit_stations_percent_change_from_baseline]</local-name>
-            <parent-name>[2020_AU_Region_Mobility_Report.csv]</parent-name>
+            <parent-name>[2020_CA_Region_Mobility_Report.csv]</parent-name>
             <remote-alias>transit_stations_percent_change_from_baseline</remote-alias>
             <ordinal>12</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_AU_Region_Mobility_Report.csv_74B5B60FCCFE40708FB1E6F04235DEA0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_CA_Region_Mobility_Report.csv_E64C50DAB02A425980934943F87B7DBF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>workplaces_percent_change_from_baseline</remote-name>
             <remote-type>20</remote-type>
             <local-name>[workplaces_percent_change_from_baseline]</local-name>
-            <parent-name>[2020_AU_Region_Mobility_Report.csv]</parent-name>
+            <parent-name>[2020_CA_Region_Mobility_Report.csv]</parent-name>
             <remote-alias>workplaces_percent_change_from_baseline</remote-alias>
             <ordinal>13</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_AU_Region_Mobility_Report.csv_74B5B60FCCFE40708FB1E6F04235DEA0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_CA_Region_Mobility_Report.csv_E64C50DAB02A425980934943F87B7DBF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>residential_percent_change_from_baseline</remote-name>
             <remote-type>20</remote-type>
             <local-name>[residential_percent_change_from_baseline]</local-name>
-            <parent-name>[2020_AU_Region_Mobility_Report.csv]</parent-name>
+            <parent-name>[2020_CA_Region_Mobility_Report.csv]</parent-name>
             <remote-alias>residential_percent_change_from_baseline</remote-alias>
             <ordinal>14</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_AU_Region_Mobility_Report.csv_74B5B60FCCFE40708FB1E6F04235DEA0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_CA_Region_Mobility_Report.csv_E64C50DAB02A425980934943F87B7DBF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country_region_code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[country_region_code (2020_CH_Region_Mobility_Report.csv)]</local-name>
+            <parent-name>[2020_CH_Region_Mobility_Report.csv]</parent-name>
+            <remote-alias>country_region_code</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_CH_Region_Mobility_Report.csv_F4F45EDDB9F44DE09EDC3A11F924C061]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country_region</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[country_region (2020_CH_Region_Mobility_Report.csv)]</local-name>
+            <parent-name>[2020_CH_Region_Mobility_Report.csv]</parent-name>
+            <remote-alias>country_region</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_CH_Region_Mobility_Report.csv_F4F45EDDB9F44DE09EDC3A11F924C061]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sub_region_1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[sub_region_1 (2020_CH_Region_Mobility_Report.csv)]</local-name>
+            <parent-name>[2020_CH_Region_Mobility_Report.csv]</parent-name>
+            <remote-alias>sub_region_1</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_CH_Region_Mobility_Report.csv_F4F45EDDB9F44DE09EDC3A11F924C061]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sub_region_2</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[sub_region_2 (2020_CH_Region_Mobility_Report.csv)]</local-name>
+            <parent-name>[2020_CH_Region_Mobility_Report.csv]</parent-name>
+            <remote-alias>sub_region_2</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_CH_Region_Mobility_Report.csv_F4F45EDDB9F44DE09EDC3A11F924C061]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>metro_area</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[metro_area (2020_CH_Region_Mobility_Report.csv)]</local-name>
+            <parent-name>[2020_CH_Region_Mobility_Report.csv]</parent-name>
+            <remote-alias>metro_area</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_CH_Region_Mobility_Report.csv_F4F45EDDB9F44DE09EDC3A11F924C061]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>iso_3166_2_code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[iso_3166_2_code (2020_CH_Region_Mobility_Report.csv)]</local-name>
+            <parent-name>[2020_CH_Region_Mobility_Report.csv]</parent-name>
+            <remote-alias>iso_3166_2_code</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_CH_Region_Mobility_Report.csv_F4F45EDDB9F44DE09EDC3A11F924C061]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>census_fips_code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[census_fips_code (2020_CH_Region_Mobility_Report.csv)]</local-name>
+            <parent-name>[2020_CH_Region_Mobility_Report.csv]</parent-name>
+            <remote-alias>census_fips_code</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_CH_Region_Mobility_Report.csv_F4F45EDDB9F44DE09EDC3A11F924C061]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>place_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[place_id (2020_CH_Region_Mobility_Report.csv)]</local-name>
+            <parent-name>[2020_CH_Region_Mobility_Report.csv]</parent-name>
+            <remote-alias>place_id</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_CH_Region_Mobility_Report.csv_F4F45EDDB9F44DE09EDC3A11F924C061]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[date (2020_CH_Region_Mobility_Report.csv)]</local-name>
+            <parent-name>[2020_CH_Region_Mobility_Report.csv]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_CH_Region_Mobility_Report.csv_F4F45EDDB9F44DE09EDC3A11F924C061]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>retail_and_recreation_percent_change_from_baseline</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[retail_and_recreation_percent_change_from_baseline (2020_CH_Region_Mobility_Report.csv)]</local-name>
+            <parent-name>[2020_CH_Region_Mobility_Report.csv]</parent-name>
+            <remote-alias>retail_and_recreation_percent_change_from_baseline</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_CH_Region_Mobility_Report.csv_F4F45EDDB9F44DE09EDC3A11F924C061]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>grocery_and_pharmacy_percent_change_from_baseline</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[grocery_and_pharmacy_percent_change_from_baseline (2020_CH_Region_Mobility_Report.csv)]</local-name>
+            <parent-name>[2020_CH_Region_Mobility_Report.csv]</parent-name>
+            <remote-alias>grocery_and_pharmacy_percent_change_from_baseline</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_CH_Region_Mobility_Report.csv_F4F45EDDB9F44DE09EDC3A11F924C061]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>parks_percent_change_from_baseline</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[parks_percent_change_from_baseline (2020_CH_Region_Mobility_Report.csv)]</local-name>
+            <parent-name>[2020_CH_Region_Mobility_Report.csv]</parent-name>
+            <remote-alias>parks_percent_change_from_baseline</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_CH_Region_Mobility_Report.csv_F4F45EDDB9F44DE09EDC3A11F924C061]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>transit_stations_percent_change_from_baseline</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[transit_stations_percent_change_from_baseline (2020_CH_Region_Mobility_Report.csv)]</local-name>
+            <parent-name>[2020_CH_Region_Mobility_Report.csv]</parent-name>
+            <remote-alias>transit_stations_percent_change_from_baseline</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_CH_Region_Mobility_Report.csv_F4F45EDDB9F44DE09EDC3A11F924C061]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>workplaces_percent_change_from_baseline</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[workplaces_percent_change_from_baseline (2020_CH_Region_Mobility_Report.csv)]</local-name>
+            <parent-name>[2020_CH_Region_Mobility_Report.csv]</parent-name>
+            <remote-alias>workplaces_percent_change_from_baseline</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_CH_Region_Mobility_Report.csv_F4F45EDDB9F44DE09EDC3A11F924C061]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>residential_percent_change_from_baseline</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[residential_percent_change_from_baseline (2020_CH_Region_Mobility_Report.csv)]</local-name>
+            <parent-name>[2020_CH_Region_Mobility_Report.csv]</parent-name>
+            <remote-alias>residential_percent_change_from_baseline</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2020_CH_Region_Mobility_Report.csv_F4F45EDDB9F44DE09EDC3A11F924C061]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
         </metadata-records>
       </connection>
       <aliases enabled='yes' />
-      <_.fcp.ObjectModelTableType.true...column caption='2020_AU_Region_Mobility_Report.csv' datatype='table' name='[__tableau_internal_object_id__].[2020_AU_Region_Mobility_Report.csv_74B5B60FCCFE40708FB1E6F04235DEA0]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='2020_CA_Region_Mobility_Report.csv' datatype='table' name='[__tableau_internal_object_id__].[2020_CA_Region_Mobility_Report.csv_E64C50DAB02A425980934943F87B7DBF]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='2020_CH_Region_Mobility_Report.csv' datatype='table' name='[__tableau_internal_object_id__].[2020_CH_Region_Mobility_Report.csv_F4F45EDDB9F44DE09EDC3A11F924C061]' role='measure' type='quantitative' />
+      <column caption='census fips code (2020 CH Region Mobility Report.csv)' datatype='string' name='[census_fips_code (2020_CH_Region_Mobility_Report.csv)]' role='dimension' type='nominal' />
       <column caption='Census Fips Code' datatype='string' name='[census_fips_code]' role='dimension' type='nominal' />
+      <column caption='country region (2020 CH Region Mobility Report.csv)' datatype='string' name='[country_region (2020_CH_Region_Mobility_Report.csv)]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
       <column caption='Country Region' datatype='string' name='[country_region]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='country region code (2020 CH Region Mobility Report.csv)' datatype='string' name='[country_region_code (2020_CH_Region_Mobility_Report.csv)]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
       <column caption='Country Region Code' datatype='string' name='[country_region_code]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='date (2020 CH Region Mobility Report.csv)' datatype='date' name='[date (2020_CH_Region_Mobility_Report.csv)]' role='dimension' type='ordinal' />
       <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+      <column caption='grocery and pharmacy percent change from baseline (2020 CH Region Mobility Report.csv)' datatype='integer' name='[grocery_and_pharmacy_percent_change_from_baseline (2020_CH_Region_Mobility_Report.csv)]' role='measure' type='quantitative' />
       <column caption='Grocery And Pharmacy Percent Change From Baseline' datatype='integer' name='[grocery_and_pharmacy_percent_change_from_baseline]' role='measure' type='quantitative' />
+      <column caption='iso 3166 2 code (2020 CH Region Mobility Report.csv)' datatype='string' name='[iso_3166_2_code (2020_CH_Region_Mobility_Report.csv)]' role='dimension' type='nominal' />
       <column caption='Iso 3166 2 Code' datatype='string' name='[iso_3166_2_code]' role='dimension' type='nominal' />
+      <column caption='metro area (2020 CH Region Mobility Report.csv)' datatype='string' name='[metro_area (2020_CH_Region_Mobility_Report.csv)]' role='dimension' type='nominal' />
       <column caption='Metro Area' datatype='string' name='[metro_area]' role='dimension' type='nominal' />
+      <column caption='parks percent change from baseline (2020 CH Region Mobility Report.csv)' datatype='integer' name='[parks_percent_change_from_baseline (2020_CH_Region_Mobility_Report.csv)]' role='measure' type='quantitative' />
       <column caption='Parks Percent Change From Baseline' datatype='integer' name='[parks_percent_change_from_baseline]' role='measure' type='quantitative' />
+      <column caption='place id (2020 CH Region Mobility Report.csv)' datatype='string' name='[place_id (2020_CH_Region_Mobility_Report.csv)]' role='dimension' type='nominal' />
       <column caption='Place Id' datatype='string' name='[place_id]' role='dimension' type='nominal' />
+      <column caption='residential percent change from baseline (2020 CH Region Mobility Report.csv)' datatype='integer' name='[residential_percent_change_from_baseline (2020_CH_Region_Mobility_Report.csv)]' role='measure' type='quantitative' />
       <column caption='Residential Percent Change From Baseline' datatype='integer' name='[residential_percent_change_from_baseline]' role='measure' type='quantitative' />
+      <column caption='retail and recreation percent change from baseline (2020 CH Region Mobility Report.csv)' datatype='integer' name='[retail_and_recreation_percent_change_from_baseline (2020_CH_Region_Mobility_Report.csv)]' role='measure' type='quantitative' />
       <column caption='Retail And Recreation Percent Change From Baseline' datatype='integer' name='[retail_and_recreation_percent_change_from_baseline]' role='measure' type='quantitative' />
+      <column caption='sub region 1 (2020 CH Region Mobility Report.csv)' datatype='string' name='[sub_region_1 (2020_CH_Region_Mobility_Report.csv)]' role='dimension' type='nominal' />
       <column caption='Sub Region 1' datatype='string' name='[sub_region_1]' role='dimension' type='nominal' />
+      <column caption='sub region 2 (2020 CH Region Mobility Report.csv)' datatype='string' name='[sub_region_2 (2020_CH_Region_Mobility_Report.csv)]' role='dimension' type='nominal' />
       <column caption='Sub Region 2' datatype='string' name='[sub_region_2]' role='dimension' type='nominal' />
+      <column caption='transit stations percent change from baseline (2020 CH Region Mobility Report.csv)' datatype='integer' name='[transit_stations_percent_change_from_baseline (2020_CH_Region_Mobility_Report.csv)]' role='measure' type='quantitative' />
       <column caption='Transit Stations Percent Change From Baseline' datatype='integer' name='[transit_stations_percent_change_from_baseline]' role='measure' type='quantitative' />
+      <column caption='workplaces percent change from baseline (2020 CH Region Mobility Report.csv)' datatype='integer' name='[workplaces_percent_change_from_baseline (2020_CH_Region_Mobility_Report.csv)]' role='measure' type='quantitative' />
       <column caption='Workplaces Percent Change From Baseline' datatype='integer' name='[workplaces_percent_change_from_baseline]' role='measure' type='quantitative' />
       <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
       <semantic-values>
@@ -308,9 +601,32 @@
       </semantic-values>
       <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
         <objects>
-          <object caption='2020_AU_Region_Mobility_Report.csv' id='2020_AU_Region_Mobility_Report.csv_74B5B60FCCFE40708FB1E6F04235DEA0'>
+          <object caption='2020_CA_Region_Mobility_Report.csv' id='2020_CA_Region_Mobility_Report.csv_E64C50DAB02A425980934943F87B7DBF'>
             <properties context=''>
-              <relation connection='textscan.1ktypsw1049dsg19ug2uw0a8gzpp' name='2020_AU_Region_Mobility_Report.csv' table='[2020_AU_Region_Mobility_Report#csv]' type='table'>
+              <relation connection='textscan.1ktypsw1049dsg19ug2uw0a8gzpp' name='2020_CA_Region_Mobility_Report.csv' table='[2020_CA_Region_Mobility_Report#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+                  <column datatype='string' name='country_region_code' ordinal='0' />
+                  <column datatype='string' name='country_region' ordinal='1' />
+                  <column datatype='string' name='sub_region_1' ordinal='2' />
+                  <column datatype='string' name='sub_region_2' ordinal='3' />
+                  <column datatype='string' name='metro_area' ordinal='4' />
+                  <column datatype='string' name='iso_3166_2_code' ordinal='5' />
+                  <column datatype='string' name='census_fips_code' ordinal='6' />
+                  <column datatype='string' name='place_id' ordinal='7' />
+                  <column datatype='date' name='date' ordinal='8' />
+                  <column datatype='integer' name='retail_and_recreation_percent_change_from_baseline' ordinal='9' />
+                  <column datatype='integer' name='grocery_and_pharmacy_percent_change_from_baseline' ordinal='10' />
+                  <column datatype='integer' name='parks_percent_change_from_baseline' ordinal='11' />
+                  <column datatype='integer' name='transit_stations_percent_change_from_baseline' ordinal='12' />
+                  <column datatype='integer' name='workplaces_percent_change_from_baseline' ordinal='13' />
+                  <column datatype='integer' name='residential_percent_change_from_baseline' ordinal='14' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='2020_CH_Region_Mobility_Report.csv' id='2020_CH_Region_Mobility_Report.csv_F4F45EDDB9F44DE09EDC3A11F924C061'>
+            <properties context=''>
+              <relation connection='textscan.1ktypsw1049dsg19ug2uw0a8gzpp' name='2020_CH_Region_Mobility_Report.csv' table='[2020_CH_Region_Mobility_Report#csv]' type='table'>
                 <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
                   <column datatype='string' name='country_region_code' ordinal='0' />
                   <column datatype='string' name='country_region' ordinal='1' />
@@ -332,27 +648,56 @@
             </properties>
           </object>
         </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[retail_and_recreation_percent_change_from_baseline]' />
+              <expression op='[retail_and_recreation_percent_change_from_baseline (2020_CH_Region_Mobility_Report.csv)]' />
+            </expression>
+            <first-end-point object-id='2020_CA_Region_Mobility_Report.csv_E64C50DAB02A425980934943F87B7DBF' />
+            <second-end-point object-id='2020_CH_Region_Mobility_Report.csv_F4F45EDDB9F44DE09EDC3A11F924C061' />
+          </relationship>
+        </relationships>
       </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
     </datasource>
   </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
   <worksheets>
     <worksheet name='Sheet 1'>
       <table>
         <view>
-          <datasources />
+          <datasources>
+            <datasource caption='2020_AU_Region_Mobility_Report' name='federated.1ptsy8z043f8t01bpoah00uxxuhx' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1ptsy8z043f8t01bpoah00uxxuhx' />
           <aggregation value='true' />
         </view>
-        <style />
+        <style>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
         <panes>
           <pane selection-relaxation-option='selection-relaxation-allow'>
             <view>
               <breakdown value='auto' />
             </view>
             <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-color' value='#f9a655' />
+              </style-rule>
+            </style>
           </pane>
         </panes>
-        <rows />
-        <cols />
+        <rows>[federated.1ptsy8z043f8t01bpoah00uxxuhx].[Latitude (generated)]</rows>
+        <cols>[federated.1ptsy8z043f8t01bpoah00uxxuhx].[Longitude (generated)]</cols>
       </table>
       <simple-id uuid='{8FE54A9B-FB20-4B8B-83ED-C1E47207FEF1}' />
     </worksheet>
@@ -360,8 +705,7 @@
       <layout-options>
         <title>
           <formatted-text>
-            <run><![CDATA[<Steven is so coollllllll!LLLL!L!LL!L!>
-<+1>]]></run>
+            <run>&lt;Testing01&gt;&#10;</run>
           </formatted-text>
         </title>
       </layout-options>
@@ -386,7 +730,7 @@
     </worksheet>
   </worksheets>
   <windows source-height='30'>
-    <window class='worksheet' name='Sheet 1'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -407,9 +751,16 @@
           </strip>
         </edge>
       </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1ptsy8z043f8t01bpoah00uxxuhx].[none:country_region (2020_CH_Region_Mobility_Report.csv):nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
       <simple-id uuid='{DE29A4B4-2B9F-4203-9813-16BBFD5464EB}' />
     </window>
-    <window class='worksheet' maximized='true' name='Sheet 2'>
+    <window class='worksheet' name='Sheet 2'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -425,16 +776,493 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='2147483647'>
             <card type='title' />
           </strip>
         </edge>
       </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
       <simple-id uuid='{E018CE26-180F-4726-8C76-CECFB7D5B8AD}' />
     </window>
   </windows>
   <thumbnails>
     <thumbnail height='384' name='Sheet 1' width='384'>
+      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
+      QmCC
+    </thumbnail>
+    <thumbnail height='384' name='Sheet 2' width='384'>
       iVBORw0KGgoAAAANSUhEUgAAAYAAAAGACAYAAACkx7W/AAAACXBIWXMAAA7DAAAOwwHHb6hk
       AAAFXUlEQVR4nO3VMQEAIAzAMMC/5yFjRxMF/XpnZg4AOW87AIAdBgAQZQAAUQYAEGUAAFEG
       ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
@@ -462,20 +1290,6 @@
       UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
       AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
       EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEfFxoG/IiMv0YAAAAASUVORK5CYII=
-    </thumbnail>
-    <thumbnail height='192' name='Sheet 2' width='192'>
-      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
-      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
-      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
-      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
-      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
-      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
-      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
-      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
-      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
-      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
-      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
-      fBUOM1sAAAAASUVORK5CYII=
     </thumbnail>
   </thumbnails>
 </workbook>
